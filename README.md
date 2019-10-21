@@ -4,6 +4,13 @@ A new Flutter project.
 Future with : 
 - media query
 - layoutbuilder
+```markdown
+- add a drawe
+- display a snack bar
+- work with a tabs
+- Navigate to a new screen and back
+- Navigate with a name route
+```
 
 ## Getting Started
 
