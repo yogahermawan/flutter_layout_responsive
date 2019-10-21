@@ -5,11 +5,11 @@ Future with :
 - media query
 - layoutbuilder
 ```markdown
-- add a drawer
-- display a snack bar
-- work with a tabs
-- Navigate to a new screen and back
-- Navigate with a name route
+- [x]add a drawer
+- [x]display a snack bar
+- [x]work with a tabs
+- []Navigate to a new screen and back
+- []Navigate with a name route
 ```
 
 ## Getting Started
