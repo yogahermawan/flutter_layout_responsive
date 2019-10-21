@@ -2,20 +2,17 @@
 
 A new Flutter project.
 Future with : 
-- media query
-- layoutbuilder
-```markdown
+
+**Tugas hari ini:**
+- [x] media query
+- [x] layoutbuilder
+
+**Next Task:**
 - [x] add a drawer
 - [x] display a snack bar
 - [x] work with a tabs
 - [ ] Navigate to a new screen and back
 - [ ] Navigate with a name route
-** Next Task: **
-- [x] Menulis artikel tentang markdown
-- [ ] Belajar Git di Petanikode
-- [ ] Belajar Bahasa pemrograman Rust
-- [x] Membuat template blog dengan bootstrap
-```
 
 ## Getting Started
 
