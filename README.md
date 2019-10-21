@@ -1,4 +1,4 @@
-# orientation
+# Orientation
 
 A new Flutter project.
 Future with : 
