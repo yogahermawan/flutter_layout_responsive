@@ -10,9 +10,108 @@ class Komedi extends StatelessWidget {
             new Padding(padding: new EdgeInsets.all(20.0),),
             new Padding(padding: new EdgeInsets.all(20.0),),
             new Icon(Icons.child_care,size: 90.0,color: Colors.lightBlueAccent,),
-            new Text("KOMEDI", style: new TextStyle(fontSize: 30.0, color: Colors.lightGreen),)
+            new Text("KOMEDI", style: new TextStyle(fontSize: 30.0, color: Colors.lightGreen),),
+            new FlatButton(
+              color: Colors.blue,
+              textColor: Colors.white,
+              disabledColor: Colors.grey,
+              disabledTextColor: Colors.black,
+              padding: EdgeInsets.all(8.0),
+              splashColor: Colors.blueAccent,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SecondRoute()),
+                );
+              },
+              child: Text(
+                "Let's click for view!",
+                style: TextStyle(fontSize: 20.0),
+              ),
+            )
           ],
         ),
+      ),
+    );
+  }
+}
+
+class SecondRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("List Horror E-Book"),
+      ),
+      body: ListView(
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Cupcake"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Donus"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Eclair"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Froyo"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Gingerbread"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Honeycomb"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Ice Cream Sandwich"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Jelly Bean"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Jelly Bean"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Kitkat"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Lollipop"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Marshmallow"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Nougat"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Oreo"),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text("Android Pie"),
+          ),
+        ],
+        // child: RaisedButton(
+        //   onPressed: () {
+        //     Navigator.pop(context);
+        //   },
+        //   child: Text('Go back!'),
+        // ),
       ),
     );
   }
