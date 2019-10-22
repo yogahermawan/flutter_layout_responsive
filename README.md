@@ -1,6 +1,18 @@
-# orientation
+# Orientation
 
 A new Flutter project.
+Future with : 
+
+**Tugas hari ini:**
+- [x] media query
+- [x] layoutbuilder
+
+**Next Task:**
+- [x] add a drawer
+- [x] display a snack bar
+- [x] work with a tabs
+- [ ] Navigate to a new screen and back
+- [ ] Navigate with a name route
 
 ## Getting Started
 
