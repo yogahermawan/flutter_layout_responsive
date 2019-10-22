@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import './horror.dart' as horror;
-import './inspiratif.dart' as inspiratif;
+import './pemrograman.dart' as pemrograman;
 import './komedi.dart' as komedi;
-
 
 void main(){
   runApp(new MaterialApp(
@@ -50,7 +49,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
              //source code lanjutan
              tabs: <Widget>[
               new Tab(icon: new Icon(Icons.child_care),text: "Komedi",),
-              new Tab(icon: new Icon(Icons.beach_access),text: "Inspiratif",),
+              new Tab(icon: new Icon(Icons.beach_access),text: "Pemrograman",),
               new Tab(icon: new Icon(Icons.event_seat),text: "Horror",), 
              ],
         ),
@@ -61,7 +60,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         children: <Widget>[
           //kemudian panggil halaman sesuai tab yang sudah dibuat
           new horror.Horror(),
-          new inspiratif.Inspiratif(),
+          new pemrograman.Pemrograman(),
           new komedi.Komedi(),
         ],
       ),
