@@ -11,8 +11,8 @@ Future with :
 - [x] add a drawer
 - [x] display a snack bar
 - [x] work with a tabs
-- [ ] Navigate to a new screen and back
-- [ ] Navigate with a name route
+- [x] Navigate to a new screen and back
+- [x] Navigate with a name route
 
 ## Getting Started
 
