@@ -11,24 +11,23 @@ class Komedi extends StatelessWidget {
             new Padding(padding: new EdgeInsets.all(20.0),),
             new Icon(Icons.child_care,size: 90.0,color: Colors.lightBlueAccent,),
             new Text("KOMEDI", style: new TextStyle(fontSize: 30.0, color: Colors.lightGreen),),
-            new FlatButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              disabledColor: Colors.grey,
-              disabledTextColor: Colors.black,
-              padding: EdgeInsets.all(8.0),
-              splashColor: Colors.blueAccent,
+            new RaisedButton(
+              color: Color.fromARGB(0, 12, 03, 03),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SecondRoute()),
+                final snackBar = SnackBar(
+                  content: Text('Yay! A SnackBar!'),
+                  action: SnackBarAction(
+                    label: 'Undo',
+                    onPressed: () {
+                      // Some code to undo the change.
+                    },
+                  ),
                 );
+
+                Scaffold.of(context).showSnackBar(snackBar);
               },
-              child: Text(
-                "Let's click for view!",
-                style: TextStyle(fontSize: 20.0),
-              ),
-            )
+              child: Text("Let's click for view"),
+            ),
           ],
         ),
       ),
