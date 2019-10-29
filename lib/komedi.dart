@@ -23,7 +23,6 @@ class Komedi extends StatelessWidget {
                     },
                   ),
                 );
-
                 Scaffold.of(context).showSnackBar(snackBar);
               },
               child: Text("Let's click for view"),

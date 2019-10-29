@@ -21,7 +21,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   TabController controller;
 
   @override
-
   void initState(){
     controller = new TabController(vsync: this, length: 3);
     //tambahkan SingleTickerProviderStateMikin pada class _HomeState

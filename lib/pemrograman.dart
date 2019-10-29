@@ -18,6 +18,7 @@ class Pemrograman extends StatelessWidget {
     return users;
   }
 
+
   @override
   Widget build(BuildContext context) {
     return new Container(
@@ -61,14 +62,26 @@ class Detail extends StatelessWidget {
   
   final User user;
   Detail(this.user);
-  
+  gridPhone(){
+    return Scaffold(
+      body: Text('Tampilan untuk layar handphone'),
+    );
+  }
+
+  gridTablet(){
+    return Scaffold(
+      body: Text('Tampilan untuk layar handphone'),
+    );
+  }
   @override
   Widget build(BuildContext context) {
+    final double shortestSide = MediaQuery.of(context).size.shortestSide;
+    final bool layarMobile = shortestSide < 600.0;
     return Scaffold(
       appBar: AppBar(
         title: Text(user.title),
       ),
-    );
+      body: layarMobile ? gridPhone() : gridTablet());
   }
 }
 
